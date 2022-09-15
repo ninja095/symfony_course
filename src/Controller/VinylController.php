@@ -21,6 +21,7 @@ class VinylController extends AbstractController
             'title' => 'PB & Jams',
             'tracks' => $tracks,
         ]);
+
     }
     #[Route('/browse/{slug}', name: 'app_browse')]
     public function browse(string $slug = null): Response
